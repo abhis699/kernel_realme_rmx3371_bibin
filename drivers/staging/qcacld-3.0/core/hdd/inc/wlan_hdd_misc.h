@@ -36,13 +36,14 @@
 #ifdef MULTI_IF_NAME
 #define PREFIX MULTI_IF_NAME "/"
 #else
-#define PREFIX "qca6390/"
+#define PREFIX ""
 #endif
 
 #endif
 
 #ifdef MSM_PLATFORM
 #define WLAN_INI_FILE              "wlan/qca_cld/" PREFIX "WCNSS_qcom_cfg.ini"
+#define WLAN_INI_FILE_DEFAULT      "wlan/qca_cld/qca6390/" PREFIX "WCNSS_qcom_cfg.ini"
 #define WLAN_MAC_FILE              "wlan/qca_cld/" PREFIX "wlan_mac.bin"
 #else
 #define WLAN_INI_FILE              "wlan/" PREFIX "qcom_cfg.ini"
